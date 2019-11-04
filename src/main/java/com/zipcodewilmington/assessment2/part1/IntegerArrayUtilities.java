@@ -24,7 +24,7 @@ public class IntegerArrayUtilities {
             Result.add(startRange);
             Result.add(stop);
         }
-        }return Result.toArray(Integer[]::new);
+        }return null;
     }
     public Integer getSumOfFirstTwo(Integer[] array) {
         Integer getFirstElement = array[0];

@@ -1,6 +1,5 @@
 package com.zipcodewilmington.assessment2.part2;
 
-import com.j256.ormlite.stmt.query.In;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,8 +15,8 @@ public class ArrayUtility {
             Integer currentElement = array2[currentIndex];
             list.add(currentElement);
         }
-        return list.toArray(Integer[]::new);
-    }
+        return list.toArray(new Integer[list.size()]);
+    }//(Integer[])list.toArray(new Integer[list.size]);
 
     public Integer[] rotate(Integer[] array, Integer index) {
         return null;
