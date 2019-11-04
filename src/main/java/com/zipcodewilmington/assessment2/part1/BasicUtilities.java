@@ -34,6 +34,10 @@ public class BasicUtilities {
     public Boolean startsWith(String string, Character character) {
         //character is identical of the first character in string
         //if character is uppercase or lowercase, it should assert (true)as long as the character is identical
-        return null;
+        if(string.charAt(0) == character){
+            return true;
+        }else{
+            return false;
+        }
     }
 }
