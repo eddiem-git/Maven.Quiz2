@@ -15,13 +15,16 @@ public class IntegerArrayUtilities {
     }
 
     public Integer[] range(Integer start, Integer stop) {
-        //make a new array to add in the start and stop
-        //ArrayList<Integer> theRange = new ArrayList<>();
-        //if the start if less then the stop
-        //if(start <= stop){
-       //     start++;
-      //  }
-            return null;
+        //make a new array to give a Array of integers from start to stop in an array
+        Integer startRange = start;
+        ArrayList<Integer> Result = new ArrayList<>();
+        for (int i = 0; i < Result.size(); i++) {
+            if(startRange <= stop) {
+            startRange++;
+            Result.add(startRange);
+            Result.add(stop);
+        }
+        }return Result.toArray(Integer[]::new);
     }
     public Integer getSumOfFirstTwo(Integer[] array) {
         Integer getFirstElement = array[0];
